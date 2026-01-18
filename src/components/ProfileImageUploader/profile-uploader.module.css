@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.avatarWrapper {
+    position: relative;
+    width: 254px;
+    height: 254px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #81FE88;
+}
+
+.avatar {
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.fileInput {
+    color: #E1E1E1;
+    font-size: 14px;
+}
+
+.fileInput::file-selector-button {
+    background-color: #171D1F;
+    color: #E1E1E1;
+    border: 1px solid #81FE88;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+.fileInput::file-selector-button:hover {
+    background-color: #81FE88;
+    color: #132E35;
+}
+

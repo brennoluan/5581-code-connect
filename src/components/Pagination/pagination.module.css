@@ -1,0 +1,144 @@
+.pagination {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+    padding: 24px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Botões de navegação (Anterior/Próxima) */
+.navButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #81FE88;
+    color: #81FE88;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.navButton:hover:not(.disabled) {
+    background: rgba(129, 254, 136, 0.1);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(129, 254, 136, 0.2);
+}
+
+.navButton:active:not(.disabled) {
+    transform: translateY(0);
+}
+
+.navButton.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+    border-color: #666;
+    color: #666;
+}
+
+.navButton svg {
+    width: 14px;
+    height: 14px;
+}
+
+.navText {
+    display: inline;
+}
+
+/* Container dos números de página */
+.pages {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0 8px;
+}
+
+/* Número individual da página */
+.pageNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: #a0a0a0;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.pageNumber:hover:not(.active) {
+    background: rgba(129, 254, 136, 0.1);
+    border-color: rgba(129, 254, 136, 0.3);
+    color: #81FE88;
+}
+
+.pageNumber.active {
+    background: #81FE88;
+    color: #0E1112;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(129, 254, 136, 0.4);
+}
+
+/* Reticências */
+.ellipsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 40px;
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* Info da página */
+.info {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+    .container {
+        gap: 4px;
+    }
+    
+    .navText {
+        display: none;
+    }
+    
+    .navButton {
+        padding: 10px 12px;
+    }
+    
+    .pageNumber {
+        min-width: 36px;
+        height: 36px;
+        padding: 0 8px;
+        font-size: 13px;
+    }
+    
+    .pages {
+        gap: 2px;
+        margin: 0 4px;
+    }
+}
+

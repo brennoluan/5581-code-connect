@@ -1,0 +1,156 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.preview {
+    width: 100%;
+    aspect-ratio: 945 / 300;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #0e1416;
+    border: 2px dashed #2d3b41;
+    transition: border-color 0.2s;
+}
+
+.preview.clickable {
+    cursor: pointer;
+}
+
+.preview:hover {
+    border-color: #81FE88;
+}
+
+.preview:focus {
+    outline: 2px solid #81FE88;
+    outline-offset: 2px;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.coverImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.changeOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(14, 20, 22, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.changeOverlay span {
+    color: #81FE88;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    border: 1px solid #81FE88;
+}
+
+.preview:hover .changeOverlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(14, 20, 22, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #666;
+    transition: color 0.2s;
+}
+
+.preview:hover .placeholder {
+    color: #81FE88;
+}
+
+.placeholder span {
+    font-size: 14px;
+}
+
+.form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fileLabel {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fileInput {
+    display: none;
+}
+
+.fileLabelText {
+    display: inline-block;
+    padding: 12px 16px;
+    background: transparent;
+    border: 1px solid #81FE88;
+    border-radius: 8px;
+    color: #81FE88;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.fileLabelText:hover {
+    background: #81FE88;
+    color: #132E35;
+}
+
+.dimensions {
+    font-size: 12px;
+    color: #81FE88;
+    background: rgba(129, 254, 136, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px;
+    background: rgba(255, 107, 107, 0.1);
+    border: 1px solid rgba(255, 107, 107, 0.3);
+    border-radius: 8px;
+}
+
+.hint {
+    color: #666;
+    font-size: 13px;
+    text-align: center;
+    margin: 0;
+}
+

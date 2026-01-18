@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.heading {
+    color: #81FE88;
+    font-size: 37px;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0;
+}
+
+.subheading {
+    color: #a0a0a0;
+    font-size: 18px;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+

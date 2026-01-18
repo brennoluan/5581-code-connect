@@ -1,0 +1,191 @@
+.editorWrapper {
+    width: 100%;
+    min-height: 400px;
+}
+
+.editorWrapper :global(.ck-editor) {
+    width: 100%;
+}
+
+.editorWrapper :global(.ck-editor__top) {
+    border-radius: 8px 8px 0 0 !important;
+}
+
+.editorWrapper :global(.ck-toolbar) {
+    background: #1a2226 !important;
+    border: 1px solid #2d3b41 !important;
+    border-radius: 8px 8px 0 0 !important;
+}
+
+.editorWrapper :global(.ck-toolbar__items) {
+    flex-wrap: wrap !important;
+}
+
+.editorWrapper :global(.ck-button) {
+    color: #e1e1e1 !important;
+}
+
+.editorWrapper :global(.ck-button:hover),
+.editorWrapper :global(.ck-button.ck-on) {
+    background: #81FE88 !important;
+    color: #132E35 !important;
+}
+
+.editorWrapper :global(.ck-dropdown__panel) {
+    background: #1a2226 !important;
+    border: 1px solid #2d3b41 !important;
+}
+
+.editorWrapper :global(.ck-list__item) {
+    color: #e1e1e1 !important;
+}
+
+.editorWrapper :global(.ck-list__item:hover) {
+    background: #81FE88 !important;
+    color: #132E35 !important;
+}
+
+.editorWrapper :global(.ck-editor__main) {
+    min-height: 350px;
+}
+
+.editorWrapper :global(.ck-content) {
+    background: #0e1416 !important;
+    border: 1px solid #2d3b41 !important;
+    border-top: none !important;
+    border-radius: 0 0 8px 8px !important;
+    min-height: 350px;
+    color: #e1e1e1 !important;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px !important;
+}
+
+.editorWrapper :global(.ck-content:focus) {
+    border-color: #81FE88 !important;
+    box-shadow: none !important;
+}
+
+.editorWrapper :global(.ck-content h1),
+.editorWrapper :global(.ck-content h2),
+.editorWrapper :global(.ck-content h3) {
+    color: #81FE88;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.editorWrapper :global(.ck-content h1) {
+    font-size: 2em;
+}
+
+.editorWrapper :global(.ck-content h2) {
+    font-size: 1.5em;
+}
+
+.editorWrapper :global(.ck-content h3) {
+    font-size: 1.25em;
+}
+
+.editorWrapper :global(.ck-content p) {
+    margin: 0.8em 0;
+}
+
+.editorWrapper :global(.ck-content a) {
+    color: #81FE88;
+}
+
+.editorWrapper :global(.ck-content blockquote) {
+    border-left: 4px solid #81FE88;
+    padding-left: 16px;
+    margin-left: 0;
+    color: #a0a0a0;
+    font-style: italic;
+}
+
+.editorWrapper :global(.ck-content code) {
+    background: #1a2226;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', monospace;
+    font-size: 0.9em;
+    color: #81FE88;
+}
+
+.editorWrapper :global(.ck-content pre) {
+    background: #1a2226 !important;
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+}
+
+.editorWrapper :global(.ck-content pre code) {
+    background: transparent;
+    padding: 0;
+    color: #e1e1e1;
+}
+
+.editorWrapper :global(.ck-content ul),
+.editorWrapper :global(.ck-content ol) {
+    padding-left: 24px;
+}
+
+.editorWrapper :global(.ck-content li) {
+    margin: 0.4em 0;
+}
+
+.editorWrapper :global(.ck-content hr) {
+    border: none;
+    border-top: 1px solid #2d3b41;
+    margin: 2em 0;
+}
+
+.editorWrapper :global(.ck-content table) {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.editorWrapper :global(.ck-content table td),
+.editorWrapper :global(.ck-content table th) {
+    border: 1px solid #2d3b41;
+    padding: 8px 12px;
+}
+
+.editorWrapper :global(.ck-content table th) {
+    background: #1a2226;
+    color: #81FE88;
+}
+
+.editorWrapper :global(.ck-content img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.editorWrapper :global(.ck-placeholder::before) {
+    color: #666 !important;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-height: 200px;
+    color: #e1e1e1;
+    background: #0e1416;
+    border: 1px solid #2d3b41;
+    border-radius: 8px;
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    color: #ff6b6b;
+    background: #1a1a1a;
+    border: 1px solid #ff6b6b;
+    border-radius: 8px;
+}
+
